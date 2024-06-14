@@ -1,0 +1,254 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins",sans-serif;
+}
+a{
+    text-decoration: none;
+
+}
+ul{
+    list-style-type: none;
+}
+.row{
+    display: flex;
+}
+img{
+    max-width: 100%;
+}
+.container{
+    width: 80%;
+    max-width: 1250px;
+    margin: auto;
+}
+header{
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    justify-content: space-between;
+    font-size:1.5rem;
+    padding:1em;
+}
+@media(max-width:400px){
+    header{
+        flex-direction: column;
+        align-items: center;
+        gap:20px;
+        font-size:1.2rem;
+    }
+}
+header a{
+    color:white;
+    transition: 0.3s;
+}
+header a:hover{
+    color:#4169e1;
+}
+.nav-list{
+    gap:20px;
+
+}
+.hero-section{
+    height: 100vh;
+    background-image: url(../images/hero-image.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.hero-text{
+    color:white;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.hero-text h1{
+    font-size:3rem;
+}
+.hero-text p{
+    font-size:1.3rem;
+}
+.hero-text b{
+    color:#4169e1;
+}
+
+.intro-section{
+    padding:50px 0;
+}
+
+.intro-section .row{
+    gap:50px;
+    justify-content: space-between;
+    
+}
+
+.intro-text,.intro-image{
+    width:50%;
+}
+
+.intro-text h1{
+    margin-bottom:20px;
+    color:#4169e1;
+}
+.intro-text p{
+    color:#777777;
+    width:85%;
+    margin-bottom:20px;
+    font-size:1.2rem;
+    line-height: 1.6;
+}
+.intro-text button{
+    padding:10px;
+    border-radius: 5px;
+    border:none;
+    background-color:#4169e1;
+    color:white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.intro-text button:hover{
+    background-color: #0069d9;
+}
+
+@media(max-width:991px){
+    .intro-section .row{
+        flex-direction: column;
+        align-items: center;
+    }
+    .intro-text,.intro-image,.intro-text p{
+        width:100%;
+        text-align: center;
+    }
+}
+.works-section{
+    padding:30px 0;
+    background-image: linear-gradient(180deg,#e3987f,#5c648c);
+}
+.works-section .row{
+    gap:10px;
+}
+.works-section .row div{
+    text-align: center;
+}
+.works-section .row div h2{
+    font-size:2rem;
+    color:white;
+}
+.works-section .row div a{
+    display: block;
+    margin:5px 0;
+    font-size:1.4rem;
+}
+.works-section .row div p{
+    font-size:1rem;
+    color:#ccc;
+}
+@media(max-width:810px){
+    .works-section .row{
+        flex-direction: column;
+    }
+}
+.projects-section{
+    padding:50px 0;
+    text-align: center;
+}
+.projects-section .title h1{
+    font-size: 2.5rem;
+    color:#4169e1;
+}
+.projects-section .title p{
+    max-width: 400px;
+    margin: auto;
+}
+.projects{
+    margin-top:50px;
+    justify-content: flex-start;
+    gap:20px;
+    flex-wrap: wrap;
+}
+.project{
+    width:18%;
+}
+.project img{
+    height: 100%;
+    transition: 0.3s;
+}
+.project:hover img{
+    transform: scale(1.1);
+}
+@media(max-width:1000px){
+    .project{
+        width:22%;
+    }
+}
+@media(max-width:620px){
+    .project{
+        width: 28%;
+        flex-grow: 1;
+    }
+}
+
+
+footer{
+    padding:20px 0;
+    background-image: url(../images/footer-image.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color:white;
+    position: relative;
+}
+footer .container{
+    position: relative;
+}
+footer .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left:0;
+    top:0;
+    background-color: rgba(0,0,0,0.3);
+}
+footer hr{
+    margin:20px 0;
+    /* position: relative; */
+}
+footer .title{
+    position:relative;
+
+}
+footer hr::after{
+    content:"";
+    width:20%;
+    height:5px;
+    background-color: white;
+    position: absolute;
+    left:0;
+}
+footer .title p{
+    line-height:2;
+    color:white;
+}
+
+footer .contact-info{
+    margin:50px 0;
+
+}
+footer .copyright{
+    text-align: center;
+}
+footer .copyright b{
+    color: #4169e1;
+}
+
+@media(max-width:991px){
+    .title{
+        text-align: center;
+    }
+    
+}
